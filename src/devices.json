@@ -1,0 +1,113 @@
+[
+    {
+        "name": "Asus",
+        "devices": ["Asus Zenfone Max Pro M1 (X00TD)", "Asus Zenfone Max Pro M2 (X01BD)"]
+    },
+    {
+        "name": "Google",
+        "devices": ["Nexus 5x (bullhead)", "Nexus 6P (angler)"]
+    },
+    {
+        "name": "LeEco",
+        "devices": ["Le 2 (s2)"]
+    },
+    {
+        "name": "Motorola",
+        "devices": [
+            "Moto G5 Plus (potter)",
+            "Moto G5S (montana)",
+            "Moto G5S PLUS (sanders)",
+            "Moto ONE POWER (chef)",
+            "Moto X4 (payton)"
+        ]
+    },
+    {
+        "name": "OnePlus",
+        "devices": [
+            "2 (oneplus2)",
+            "3/3T (oneplus3)",
+            "5 (cheesburger)",
+            "5T (dumpling)",
+            "6 (enchilada)",
+            "7 (guacamoleb)",
+            "7 PRO (guacamole)"
+        ]
+    },
+    {
+        "name": "Realme",
+        "devices": ["3 PRO (RMX1851)"]
+    },
+    {
+        "name": "Samsung",
+        "devices": ["GALAXY S7 (herolte)", "GALAXY S7 Edge(hero2lte)"]
+    },
+    {
+        "name": "Sony",
+        "devices": [
+            "Xperia 1 DSDS (j9110)",
+            "Xperia 1 RoW (j8110)",
+            "Xperia 10 DSDS (i4113)",
+            "Xperia 10 Plus DSDS (i4213)",
+            "Xperia 10 Plus RoW (i3213)",
+            "Xperia 10 RoW (i3113)",
+            "Xperia 5 DSDS (j9210)",
+            "Xperia 5 RoW (j8210)",
+            "Xperia XA2 DSDS (h4113)",
+            "Xperia XA2 Plus DSDS (h4413)",
+            "Xperia XA2 Plus RoW (h3413)",
+            "Xperia XA2 RoW (h3113)",
+            "Xperia XA2 Ultra DSDS (h4213)",
+            "Xperia XA2 Ultra RoW (h3213)",
+            "Xperia XZ Premium DSDS (g8142)",
+            "Xperia XZ Premium RoW (g8141)",
+            "Xperia XZ1 Compact RoW (g8441)",
+            "Xperia XZ1 DSDS (g8342)",
+            "Xperia XZ1 RoW (g8341)",
+            "Xperia XZ2 Compact DSDS (h8324)",
+            "Xperia XZ2 Compact RoW (h8314)",
+            "Xperia XZ2 DSDS (h8266)",
+            "Xperia XZ2 RoW (h8216)",
+            "Xperia XZ3 DSDS (h9436)",
+            "Xperia XZ3 RoW (h8416)"
+        ]
+    },
+    {
+        "name": "Xiaomi",
+        "devices": [
+            "Mi 5 (gemini)",
+            "Mi 5s (capricorn)",
+            "Mi 5s Plus (natrium)",
+            "Mi 6X (wayne)",
+            "Mi 8 (dipper)",
+            "Mi 8 Lite (platina)",
+            "Mi 9 SE (grus)",
+            "Mi A1 (tissot)",
+            "Mi A2 (jasmine_sprout)",
+            "Mi A3 (laurel_sprout)",
+            "Mi Mix (lithium)",
+            "Mi Mix 2s (polaris)",
+            "Mi Note 2 (scorpio)",
+            "Poco F1 (beryllium)",
+            "Redmi 3S/3X (land)",
+            "Redmi 4/4X (santoni)",
+            "Redmi 4A (rolex)",
+            "Redmi 5 (rosy)",
+            "Redmi 5A (riva)",
+            "Redmi 6 Pro (sakura)",
+            "Redmi K20 Pro/Mi 9T Pro (raphael)",
+            "Redmi K20/Mi 9T (davinci)",
+            "Redmi Note 3 Pro (kenzo)",
+            "Redmi Note 4/4X (mido)",
+            "Redmi Note 5 Global/Pro (whyred)",
+            "Redmi Note 5/Plus (vince)",
+            "Redmi Note 7 (lavender)",
+            "Redmi Note 7 Pro (violet)",
+            "Redmi Note 8 (ginkgo)",
+            "Redmi Note 8T (willow)"
+        ]
+    },
+    {
+        "name": "ZUK",
+        "devices": ["Z1 (ham)", "Z2 Plus (z2_plus)"]
+    }
+]

@@ -1,0 +1,16 @@
+@import _variables
+
+.container
+    flex: 0 0 320px
+    padding: 0.5rem 1.3rem
+    margin: 1.3rem auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: darken($background, 5%)
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+    &:hover
+        background: lighten($background, 1%)
+        transform: translateY(-5px)

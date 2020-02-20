@@ -1,0 +1,65 @@
+@import _variables
+
+=links
+    text-decoration: none
+    color: $links
+    transition: color 0.15s ease-in-out
+    &:hover
+        color: $text-color
+
+.container
+    max-width: 950px
+    height: 100vh
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    padding: 0 1.5rem
+    header
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1.4rem 0
+        input[type="text"]
+            padding: 0.6rem
+            width: 250px
+            max-width: 250px
+            background: $search-background
+            border: 2px solid transparent
+            color: $text-color
+            border-radius: 3px
+            box-sizing: border-box
+            &::placeholder
+                color: $links
+            &:focus
+                outline: none
+                border: 2px solid $border-color
+        div[class="wrapper"]
+            width: 350px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        img
+            width: 80px
+        nav
+            a
+                @include links
+                margin-left: 1.5rem
+                padding-bottom: 0.3rem
+                font-size: 1.1em
+                &[aria-current="page"]
+                    border-bottom: 2px solid $border-color
+                    color: $text-color
+    main
+        flex: 1
+        color: $text-color
+        margin: 5rem 0
+
+    footer
+        text-align: center
+        margin-top: 2rem
+        a
+            @include links
+            margin-left: 1.3rem
+        p
+            color: $text-color

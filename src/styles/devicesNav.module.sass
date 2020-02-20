@@ -1,0 +1,29 @@
+@import _variables
+
+.container
+    display: flex
+    justify-content: space-between
+    overflow: auto
+    -ms-overflow-style: none
+    background: darken($background, 5%)
+    border-radius: 3px
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
+    &::-webkit-scrollbar
+            display: none
+    button
+        background: none
+        border: none
+        padding: 1.3rem 1.4rem
+        cursor: pointer
+        color: $text-color
+        transition: all 0.2s ease-in
+        &:first-child
+            border: none
+        &:hover
+            background: rgba(0, 0, 0, 0.4)
+            color: $links
+        &:focus
+            outline: none
+        &[class="active"]
+            background: rgba(0, 0, 0, 0.4)
+            color: $links
