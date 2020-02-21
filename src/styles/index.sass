@@ -12,3 +12,18 @@ body
 code
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
 
+//GLOBAL
+.page-header
+  text-align: center
+  position: relative
+  margin-bottom: 5.5rem
+  &::after
+    content: ''
+    width: 50px
+    height: 4px
+    background: $border-color
+    position: absolute
+    top: 150%
+    left: 50%
+    transform: translateX(-50%)
+

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = () => {
     return (
-        <h1>Team</h1>
+        <h2 className="page-header">Team</h2>
     );
 }
 

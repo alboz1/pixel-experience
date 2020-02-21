@@ -5,7 +5,7 @@ import layoutStyles from '../styles/layoutStyles.module.sass';
 const Layout = ({ children }) => {
     return (
         <div className={layoutStyles.container}>
-            <header>
+            <header className="site-header">
                 <div className="wrapper">
                     <Link to='/'>
                         <img src="./logo_p.png" alt="logo" />

@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from '@reach/router';
+
 import deviceStyles from '../styles/device.module.sass';
 
 const Device = ({ name }) => {
     return (
-        <div className={deviceStyles.container}>
+        <Link to={`/download/${ name.replace('/', '') }`} className={ deviceStyles.container }>
             <p>{ name }</p>
-            <i>+</i>
-        </div>
+        </Link>
     );
 }
 

@@ -6,6 +6,7 @@ import Devices from './routes/Devices';
 import Team from './routes/Team';
 import About from './routes/About';
 import Provider from './providers/Provider';
+import DownloadPage from './routes/DownloadPage';
 import NotFound from './components/NotFound';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Devices path='/devices' />
           <Team path='/team' />
           <About path='/about' />
+          <DownloadPage path='/download/:deviceName' />
           <NotFound default />
         </Router>
       </Layout>
