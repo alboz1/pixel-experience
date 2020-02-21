@@ -1,9 +1,13 @@
 @import _variables
+@import _mixins
 
 .container
     display: flex
     justify-content: space-between
     align-items: center
+    +mobile
+        flex-direction: column
+        text-align: center
     span
         h2
             color: $header-text
@@ -11,6 +15,8 @@
             font-size: 3em
             margin: 0
             padding: 1.2rem 0
+            +mobile
+                font-size: 2.5em
         button
             border: none
             background: $border-color
@@ -26,6 +32,9 @@
                 transform: translateY(-2px)
     div
         width: 450px
+        +mobile
+            width: 100%
+            margin-top: 2.5rem
         img
             width: 100%
 
