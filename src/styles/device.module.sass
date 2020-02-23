@@ -1,4 +1,5 @@
 @import _variables
+@import _mixins
 
 .container
     flex: 0 0 260px
@@ -9,8 +10,11 @@
     border-radius: 3px
     cursor: pointer
     transition: all 0.2s ease-in-out
-    color: $text-color
+    color: $header-text
     text-decoration: none
     &:hover
         background: lighten($background, 1%)
         transform: translateY(-5px)
+    +mobile
+        flex-grow: 1
+        margin: 1rem 0

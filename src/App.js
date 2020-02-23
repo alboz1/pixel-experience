@@ -1,12 +1,12 @@
 import React from 'react';
 import { Router } from '@reach/router';
 import Layout from './components/Layout';
-import Home from './routes/Home';
-import Devices from './routes/Devices';
-import Team from './routes/Team';
-import About from './routes/About';
+import Home from './pages/Home';
+import Devices from './pages/Devices';
+import Team from './pages/Team';
+import About from './pages/About';
 import Provider from './providers/Provider';
-import DownloadPage from './routes/DownloadPage';
+import DownloadPage from './pages/DownloadPage';
 import NotFound from './components/NotFound';
 
 const App = () => {

@@ -12,6 +12,7 @@ const Devices = () => {
             <DevicesNav />
             <div className={ devicesStyles.container }>
                 {
+                    !devices.length ? <p className="info">Select your device</p> :
                     devices.map(device => {
                         return <Device key={ device } name={ device } />
                     })

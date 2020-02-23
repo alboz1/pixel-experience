@@ -1,0 +1,20 @@
+@import _variables
+@import _mixins
+
+.aboutContainer
+    text-align: center
+    p
+        line-height: 1.5
+        font-size: 1.2em
+        color: $header-text
+    header[class="about-header"]
+        border-bottom: 1px solid rgba(#a3a2a2, 0.3)
+        padding-bottom: 2rem
+        p[class="hero"]
+            font-size: 2em
+        p[class="sub-hero"]
+            color: $links
+    section[class="donate-section"]
+        padding: 2.5rem 0
+        button
+            +button 

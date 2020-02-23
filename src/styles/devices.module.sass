@@ -1,5 +1,13 @@
+@import _variables
+@import _mixins
+
 .container
     display: flex
     justify-content: space-around
     flex-wrap: wrap
     margin-top: 2rem
+    p[class="info"]
+        color: $links
+        font-size: 2em
+    +mobile
+        margin-top: 1rem
