@@ -7,6 +7,8 @@ const AndroidPackage = ({ latestVersion, olderVersion }) => {
     const { dispatchPackageInfo } = useContext(Context);
 
     const handleOpenPackage = () => {
+        document.body.style.overflow = 'hidden';
+
         dispatchPackageInfo({
             type: 'OPEN_PACKAGE',
             name: 'PixelExperience_beryllium-10.0-20200213',

@@ -25,6 +25,8 @@
             color: $text-color
             border-radius: 3px
             box-sizing: border-box
+            +mobile
+                width: 100%
             &::placeholder
                 color: $links
             &:focus
@@ -35,6 +37,8 @@
             display: flex
             justify-content: space-between
             align-items: center
+            +mobile
+                flex: 1
         img
             width: 80px
         nav
@@ -88,7 +92,7 @@
             flex: 1
             color: $header-text
             text-decoration: none
-            padding: 1rem 0
+            padding: 0.8rem 0
             &:hover
                 background: darken($background, 5%)
             &[aria-current="page"]
