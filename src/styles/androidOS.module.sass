@@ -1,5 +1,5 @@
-@import _variables
-@import _mixins
+@import "helpers/_variables"
+@import "helpers/_mixins"
 
 .androidContainer
     background: darken($background, 5%)
@@ -7,21 +7,25 @@
     color: $header-text
     border-radius: 3px
     margin-top: 1.5rem
+    cursor: pointer
     &:firs-child
         margin-top: 0
     +mobile
         font-size: 15px
     header
-        padding: 0 1.5rem
+        padding: 0.7rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        svg
+            fill: $header-text
+        svg[class="open"]
+            transform: rotate(180deg)
     h4, h5
         margin: 0
     div[class="package-container"]
         display: none
-        height: 0
-        transition: all 0.3s ease-in-out
     div[class="package-container opened"]
-        transition: all 0.3s ease-in-out
-        height: 500px
         display: flex
         justify-content: space-between
         margin-top: 1.3rem

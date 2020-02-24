@@ -1,0 +1,47 @@
+@import "helpers/_variables"
+@import "helpers/_mixins"
+
+.packageInfo
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: darken($background, 5%)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+    box-sizing: border-box
+    border-radius: 3px
+    color: $header-text
+    display: block
+    width: 550px
+    padding: 1.5rem
+    +mobile
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        transform: translate(0, 0)
+        width: auto
+        font-size: 15px
+    header[class="package-info-header"]
+        display: flex
+        justify-content: space-between
+        align-items: center
+        button
+            background: none
+            border: none
+            padding: 0.3rem
+            cursor: pointer
+            svg
+                fill: $header-text
+            &:hover svg
+                fill: darken($header-text, 5%)
+    section[class="changelog"]
+        background: $text-color
+        color: #0f0f0f
+        padding: 1.5rem
+        box-sizing: border-box
+        pre
+            white-space: pre-wrap
+
+.close
+    display: none
