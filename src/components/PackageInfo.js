@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Context from '../hooks/Context';
 import { motion } from 'framer-motion';
 
@@ -15,23 +15,26 @@ const PackageInfo = () => {
     const variants = {
         hidden: {
             opacity: 0,
-            scale: 0.7
+            scale: 1.1,
+            x: window.innerWidth <= 560 ? 0 : '-50%',
+            y: window.innerWidth <= 560 ? 0 : '-50%'
         },
         visible: {
             opacity: 1,
-            scale: 1
+            scale: 1,
+            x: window.innerWidth <= 560 ? 0 : '-50%',
+            y: window.innerWidth <= 560 ? 0 : '-50%'
         }
     }
 
     return (
-        <div
-            className={ packageInfo.opened ? packageInfoStyles.infoContainer : packageInfoStyles.close }
-        >
+        <>
             <motion.div
                 initial="hidden"
                 animate={ packageInfo.opened ? "visible" : "hidden" }
                 variants={ variants }
-                transition={ { type: "spring", mass: 0.5, velocity: 2 } }  
+                transition={ { duration: 0.25 } }
+                style={{ pointerEvents: packageInfo.opened ? 'auto' : 'none' }}
                 className="packageInfo"
             >
                 <header className="package-info-header">
@@ -58,8 +61,12 @@ const PackageInfo = () => {
                     </pre>
                 </section>
             </motion.div>
-            <div onClick={ handleCloseInfo } className={ packageInfoStyles.overlay }></div>
-        </div>
+            <div
+                className={ packageInfo.opened ? packageInfoStyles.overlay : packageInfoStyles.close }
+                onClick={ handleCloseInfo }
+            >
+            </div>
+        </>
     );
 }
 

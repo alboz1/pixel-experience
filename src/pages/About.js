@@ -1,9 +1,11 @@
 import React from 'react';
+import Layout from '../components/Layout';
+
 import aboutStyles from '../styles/about.module.sass';
 
 const About = () => {
     return (
-        <>
+        <Layout>
             <h2 className="page-header">About</h2>
             <div className={aboutStyles.aboutContainer}>
                 <header className="about-header">
@@ -17,7 +19,7 @@ const About = () => {
                     <button>Donate using PayPal</button>
                 </section>
             </div>
-        </>
+        </Layout>
     );
 }
 

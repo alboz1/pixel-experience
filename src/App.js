@@ -1,6 +1,5 @@
 import React from 'react';
 import { Router } from '@reach/router';
-import Layout from './components/Layout';
 import Home from './pages/Home';
 import Devices from './pages/Devices';
 import Team from './pages/Team';
@@ -12,7 +11,6 @@ import NotFound from './components/NotFound';
 const App = () => {
   return (
     <Provider>
-      <Layout>
         <Router>
           <Home path='/' />
           <Devices path='/devices' />
@@ -21,7 +19,6 @@ const App = () => {
           <DownloadPage path='/download/:deviceName' />
           <NotFound default />
         </Router>
-      </Layout>
     </Provider>
   );
 }

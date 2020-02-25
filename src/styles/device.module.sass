@@ -1,7 +1,7 @@
 @import "helpers/_variables"
 @import "helpers/_mixins"
 
-.container
+.deviceContainer
     flex: 0 0 260px
     padding: 0.5rem 1.3rem
     margin: 1.3rem 0
@@ -10,8 +10,9 @@
     border-radius: 3px
     cursor: pointer
     transition: all 0.2s ease-in-out
-    color: $header-text
-    text-decoration: none
+    a
+        text-decoration: none
+        color: $header-text
     &:hover
         background: lighten($background, 1%)
         transform: translateY(-5px)

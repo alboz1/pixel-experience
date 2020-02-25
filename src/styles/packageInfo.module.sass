@@ -1,63 +1,56 @@
 @import "helpers/_variables"
 @import "helpers/_mixins"
 
-.infoContainer
-    display: flex
-    justify-content: center
-    align-items: center
+div[class="packageInfo"]
     position: fixed
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 1
-    div[class="packageInfo"]
-        background: darken($background, 5%)
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
-        box-sizing: border-box
-        border-radius: 3px
-        color: $header-text
-        width: 550px
+    top: 50%
+    left: 50%
+    background: darken($background, 5%)
+    color: $header-text
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+    box-sizing: border-box
+    border-radius: 3px
+    width: 550px
+    padding: 1.5rem
+    display: block
+    z-index: 3
+    line-height: 1.3
+    +mobile
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        width: 100%
+        font-size: 15px
+    header[class="package-info-header"]
+        display: flex
+        justify-content: space-between
+        align-items: center
+        button
+            background: none
+            border: none
+            padding: 0.3rem
+            cursor: pointer
+            svg
+                fill: $header-text
+            &:hover svg
+                fill: darken($header-text, 5%)
+    button[class="download-btn"]
+        +button
+        padding: 0.4rem
+        font-size: 1.05em
+    section[class="changelog"]
+        background: $text-color
+        color: #0f0f0f
         padding: 1.5rem
-        display: block
-        z-index: 3
-        line-height: 1.3
-        animation-fill-mode: forwards
-        +mobile
-            position: fixed
-            top: 0
-            right: 0
-            bottom: 0
-            left: 0
-            width: 100%
-            font-size: 15px
-        header[class="package-info-header"]
-            display: flex
-            justify-content: space-between
-            align-items: center
-            button
-                background: none
-                border: none
-                padding: 0.3rem
-                cursor: pointer
-                svg
-                    fill: $header-text
-                &:hover svg
-                    fill: darken($header-text, 5%)
-        button[class="download-btn"]
-            +button
-            padding: 0.4rem
-            font-size: 1.2em
-        section[class="changelog"]
-            background: $text-color
-            color: #0f0f0f
-            padding: 1.5rem
-            box-sizing: border-box
-            pre
-                white-space: pre-wrap
+        box-sizing: border-box
+        pre
+            white-space: pre-wrap
 
 .close
     display: none
+
 .overlay
     position: fixed
     top: 0
