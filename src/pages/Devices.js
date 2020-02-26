@@ -15,7 +15,7 @@ const Devices = () => {
                 {
                     !devices.length ? <p className="info">Select your device</p> :
                     devices.map((device, index) => {
-                        return <Device index={index} key={ device } name={ device } />
+                        return <Device index={ index } key={ device } name={ device } />
                     })
                 }
             </div>
