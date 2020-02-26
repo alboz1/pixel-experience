@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
+
+import Logo from '../assets/logo_p.png';
 import layoutStyles from '../styles/layoutStyles.module.sass';
 
 const Layout = ({ children }) => {
@@ -8,7 +10,7 @@ const Layout = ({ children }) => {
             <header className="site-header">
                 <div className="wrapper">
                     <Link to='/'>
-                        <img src="./logo_p.png" alt="logo" />
+                        <img src={ Logo } alt="logo" />
                     </Link>
                     <nav>
                         <Link to='/devices'>Devices</Link>
