@@ -1,30 +1,47 @@
 @import "helpers/_variables"
 @import "helpers/_mixins"
 
-.container
-    display: flex
-    justify-content: space-between
-    overflow: auto
-    -ms-overflow-style: none
-    background: darken($background, 5%)
-    border-radius: 3px
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
-    &::-webkit-scrollbar
-        display: none
-    button
-        background: none
+.navWrapper
+    position: relative
+    button[class="scroll-btn"]
         border: none
-        padding: 1.3rem 1.4rem
+        border-left: 1px solid #424245 
         cursor: pointer
-        color: $header-text
-        transition: all 0.2s ease-in
-        &:first-child
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        width: 40px
+        background: darken($background, 5%)
+        line-height: 0.5
+        border-radius: 0 3px 3px 0
+        svg
+            fill: $text-color
+    nav[class="device-nav"]
+        display: flex
+        justify-content: space-between
+        overflow: auto
+        -ms-overflow-style: none
+        background: darken($background, 5%)
+        border-radius: 3px
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+        scroll-behavior: smooth
+        &::-webkit-scrollbar
+            display: none
+        button
+            background: none
             border: none
-        &:hover
-            background: rgba(0, 0, 0, 0.4)
-            color: $links
-        &:focus
-            outline: none
-        &[class="active"]
-            background: rgba(0, 0, 0, 0.4)
-            color: $links
+            padding: 1.3rem 1.4rem
+            cursor: pointer
+            color: $header-text
+            transition: all 0.2s ease-in
+            &:first-child
+                border: none
+            &:hover
+                background: rgba(0, 0, 0, 0.4)
+                color: $links
+            &:focus
+                outline: none
+            &[class="active"]
+                background: rgba(0, 0, 0, 0.4)
+                color: $links

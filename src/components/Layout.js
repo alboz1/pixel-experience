@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
                     <Link to='/'>Blog</Link>
                     <Link to='/'>Statistics</Link>
                     <Link to='/'>Github</Link>
-                    <Link to='/'>Telegram channel</Link>
+                    <Link to='/'>Telegram</Link>
                 </nav>
                 <p>Made by ErdVuca</p>
             </footer>
