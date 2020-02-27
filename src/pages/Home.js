@@ -13,7 +13,7 @@ const Home = () => {
                     <h2>FAST</h2>
                     <h2>RELIABLE</h2>
                     <h2>MINIMAL</h2>
-                    <Link to='/devices'>
+                    <Link to={`${process.env.PUBLIC_URL}/devices`}>
                         <button>Download</button>
                     </Link>
                 </span>

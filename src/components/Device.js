@@ -5,7 +5,10 @@ import deviceStyles from '../styles/device.module.sass';
 
 const Device = ({ name }) => {
     return (
-        <Link to={`/download/${ name.replace('/', '') }`} className={ deviceStyles.deviceContainer }>
+        <Link
+            to={`${process.env.PUBLIC_URL}/download/${ name.replace('/', '') }`}
+            className={ deviceStyles.deviceContainer }
+        >
             <p>{ name }</p>
         </Link>
     );

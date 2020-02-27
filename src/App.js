@@ -12,11 +12,11 @@ const App = () => {
   return (
     <Provider>
         <Router>
-          <Home path='/' />
-          <Devices path='/devices' />
-          <Team path='/team' />
-          <About path='/about' />
-          <DownloadPage path='/download/:deviceName' />
+          <Home path={ `${process.env.PUBLIC_URL}/` } />
+          <Devices path={ `${process.env.PUBLIC_URL}/devices` } />
+          <Team path={ `${process.env.PUBLIC_URL}/team` } />
+          <About path={ `${process.env.PUBLIC_URL}/about` } />
+          <DownloadPage path={ `${process.env.PUBLIC_URL}/download/:deviceName` } />
           <NotFound default />
         </Router>
     </Provider>
