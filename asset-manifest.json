@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pixel-experience/static/css/main.bbac489c.chunk.css",
-    "main.js": "/pixel-experience/static/js/main.63545608.chunk.js",
-    "main.js.map": "/pixel-experience/static/js/main.63545608.chunk.js.map",
+    "main.js": "/pixel-experience/static/js/main.34156582.chunk.js",
+    "main.js.map": "/pixel-experience/static/js/main.34156582.chunk.js.map",
     "runtime-main.js": "/pixel-experience/static/js/runtime-main.98b57246.js",
     "runtime-main.js.map": "/pixel-experience/static/js/runtime-main.98b57246.js.map",
     "static/js/2.0970295d.chunk.js": "/pixel-experience/static/js/2.0970295d.chunk.js",
     "static/js/2.0970295d.chunk.js.map": "/pixel-experience/static/js/2.0970295d.chunk.js.map",
     "index.html": "/pixel-experience/index.html",
-    "precache-manifest.57347d0e6ae2550575fc1620a67037a2.js": "/pixel-experience/precache-manifest.57347d0e6ae2550575fc1620a67037a2.js",
+    "precache-manifest.f898c970a57d1f4ef336044744cc6e93.js": "/pixel-experience/precache-manifest.f898c970a57d1f4ef336044744cc6e93.js",
     "service-worker.js": "/pixel-experience/service-worker.js",
     "static/css/main.bbac489c.chunk.css.map": "/pixel-experience/static/css/main.bbac489c.chunk.css.map",
     "static/js/2.0970295d.chunk.js.LICENSE.txt": "/pixel-experience/static/js/2.0970295d.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.98b57246.js",
     "static/js/2.0970295d.chunk.js",
     "static/css/main.bbac489c.chunk.css",
-    "static/js/main.63545608.chunk.js"
+    "static/js/main.34156582.chunk.js"
   ]
 }
