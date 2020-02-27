@@ -24,30 +24,22 @@
     h4, h5
         margin: 0
     div[class="package-container"]
-        display: none
-    div[class="package-container opened"]
         display: flex
         justify-content: space-between
-        margin-top: 1.3rem
         +mobile
             flex-direction: column
         div[class="packages"]
             flex: 1
             text-align: center
-            padding: 0 1.8rem
+            padding: 1.3rem 1.8rem
+            border-right: 1px solid rgba(#a3a2a2, 0.3)
             +mobile
+                border: none
                 padding: 0 1rem
             h5
                 padding-bottom: 1.5rem
                 border-bottom: 1px solid rgba(#a3a2a2, 0.3)
             &:last-child
+                border: none
                 +mobile
                     margin-top: 1.5rem
-        hr
-            border: none
-            width: 1px
-            height: 200px
-            background: rgba(#a3a2a2, 0.3)
-            align-self: flex-end
-            +mobile
-                display: none

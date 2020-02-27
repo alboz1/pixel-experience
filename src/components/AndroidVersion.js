@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
-import androidOSStyles from '../styles/androidOS.module.sass';
+import { motion } from 'framer-motion';
 import AndroidPackage from './AndroidPackage';
+
+import androidOSStyles from '../styles/androidOS.module.sass';
 
 const AndroidOS = ({ androidVersion }) => {
     const [ toggleAccordion, setToggleAccordion] = useState(false);
 
     const handleOpenAccordion = () => {
         setToggleAccordion(!toggleAccordion);
+    }
+
+    const variants = {
+        hidden: {
+            height: 0,
+            overflow: 'hidden'
+        },
+        visible: {
+            height: 'auto'
+        }
     }
 
     return (
@@ -19,7 +31,12 @@ const AndroidOS = ({ androidVersion }) => {
                 </svg>
             </header>
 
-            <div className={ toggleAccordion ? "package-container opened" : "package-container" }>
+            <motion.div
+                initial="hidden"
+                animate={ toggleAccordion ? "visible" : "hidden" }
+                variants={ variants }
+                className="package-container"
+            >
                 <div className="packages">
                     <h5>Full packages</h5>
                     <AndroidPackage latestVersion="Latest version" />
@@ -27,12 +44,12 @@ const AndroidOS = ({ androidVersion }) => {
                     <AndroidPackage />
                     <AndroidPackage />
                 </div>
-                <hr />
+
                 <div className="packages">
                     <h5>Incremental packages</h5>
                     <AndroidPackage latestVersion="Latest version" />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

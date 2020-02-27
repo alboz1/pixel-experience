@@ -15,7 +15,7 @@ const PackageInfo = () => {
     const variants = {
         hidden: {
             opacity: 0,
-            scale: 1.1,
+            scale: 1.05,
             x: window.innerWidth <= 560 ? 0 : '-50%',
             y: window.innerWidth <= 560 ? 0 : '-50%'
         },
