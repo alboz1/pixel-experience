@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pixel-experience/static/css/main.bbac489c.chunk.css",
+    "main.js": "/pixel-experience/static/js/main.63545608.chunk.js",
+    "main.js.map": "/pixel-experience/static/js/main.63545608.chunk.js.map",
+    "runtime-main.js": "/pixel-experience/static/js/runtime-main.98b57246.js",
+    "runtime-main.js.map": "/pixel-experience/static/js/runtime-main.98b57246.js.map",
+    "static/js/2.0970295d.chunk.js": "/pixel-experience/static/js/2.0970295d.chunk.js",
+    "static/js/2.0970295d.chunk.js.map": "/pixel-experience/static/js/2.0970295d.chunk.js.map",
+    "index.html": "/pixel-experience/index.html",
+    "precache-manifest.57347d0e6ae2550575fc1620a67037a2.js": "/pixel-experience/precache-manifest.57347d0e6ae2550575fc1620a67037a2.js",
+    "service-worker.js": "/pixel-experience/service-worker.js",
+    "static/css/main.bbac489c.chunk.css.map": "/pixel-experience/static/css/main.bbac489c.chunk.css.map",
+    "static/js/2.0970295d.chunk.js.LICENSE.txt": "/pixel-experience/static/js/2.0970295d.chunk.js.LICENSE.txt",
+    "static/media/logo_p.png": "/pixel-experience/static/media/logo_p.1c01dfba.png",
+    "static/media/showcase.png": "/pixel-experience/static/media/showcase.0baa9081.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98b57246.js",
+    "static/js/2.0970295d.chunk.js",
+    "static/css/main.bbac489c.chunk.css",
+    "static/js/main.63545608.chunk.js"
+  ]
+}
